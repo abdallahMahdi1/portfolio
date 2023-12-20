@@ -42,8 +42,8 @@ class Skills extends StatelessWidget {
                 ),
                 Skill(
                   name: "Machine Learning",
-                  percent: 0.9,
-                  perText: "90%",
+                  percent: 0.15,
+                  perText: "15%",
                   image: 'assets/images/python.svg',
                 )
               ],
@@ -59,8 +59,8 @@ class Skills extends StatelessWidget {
                 ),
                 Skill(
                   name: " Firebase & Firestore",
-                  percent: 0.8,
-                  perText: "80%",
+                  percent: 0.6,
+                  perText: "60%",
                   image: 'assets/images/firebase.svg',
                 ),
                 Skill(
@@ -71,15 +71,15 @@ class Skills extends StatelessWidget {
                 ),
                 Skill(
                   name: "Git and Github",
-                  percent: 0.9,
-                  perText: "90%",
+                  percent: 0.7,
+                  perText: "70%",
                   image: 'assets/images/github.svg',
                 ),
                 Skill(
-                  name: "Machine Learning",
-                  percent: 0.9,
-                  perText: "90%",
-                  image: 'assets/images/python.svg',
+                  name: "Arduino",
+                  percent: 0.6,
+                  perText: "60%",
+                  image: 'assets/images/arduino.svg',
                 )
               ],
             ),

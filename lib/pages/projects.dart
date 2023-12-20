@@ -1,21 +1,59 @@
 import 'package:flutter/material.dart';
+import 'package:portfolios/pages/ithra.dart';
 import 'package:portfolios/pages/sales_analysis.dart';
+import 'package:portfolios/pages/call_center.dart';
 
 class Projects extends StatelessWidget {
   const Projects({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-        body: Center(
-      child: Wrap(
-        children: [
-          Project(
-            image: 'assets/images/sales.jpg',
-            tital: "Electroincs Store Sales Analysis",
-            page: SalesAnalysis(),
-          ),
-        ],
+    TextTheme textTheme = Theme.of(context).textTheme;
+    return Scaffold(
+        body: Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: SingleChildScrollView(
+        primary: true,
+        scrollDirection: Axis.vertical,
+        child: Wrap(
+          children: [
+            Column(
+              children: [
+                Text(
+                  "Data Analtyics Projects",
+                  style: textTheme.bodyMedium,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Project(
+                      image: 'assets/images/sales.jpg',
+                      tital: "Electroincs Store Sales Analysis",
+                      page: SalesAnalysis(),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Project(
+                      image: 'assets/images/call_center.png',
+                      tital: "Call center Dashboard",
+                      page: CallCenter(),
+                    ),
+                  ],
+                ),
+                Text(
+                  "Mobile Application Projects",
+                  style: textTheme.bodyMedium,
+                ),
+                const Project(
+                  image: 'assets/images/ithra/ithracover.png',
+                  tital: "Ithra Mobile Application",
+                  page: Ithra(),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     ));
   }

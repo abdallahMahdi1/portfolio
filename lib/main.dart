@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:loading_indicator/loading_indicator.dart';
+import 'package:portfolios/pages/ithra.dart';
 import 'package:portfolios/pages/projects.dart';
 import 'package:portfolios/pages/skills_and_certificate.dart';
 import 'package:portfolios/themes/theme_cons.dart';
 import 'package:portfolios/themes/theme_manger.dart';
 import 'pages/about_me.dart';
+import 'dart:js' as js;
 
 void main() => runApp(const MyApp());
 
@@ -44,7 +46,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Abdalla Portfoilo',
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: _themeManager.themeMode,
@@ -67,7 +69,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     // Wait for 2 seconds and then navigate to the next screen
-    Future.delayed(const Duration(seconds: 4), () {
+    Future.delayed(const Duration(seconds: 1), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const HomePage()),
@@ -145,10 +147,37 @@ class _HomePageState extends State<HomePage> {
                 Projects(),
               ],
             ),
-            floatingActionButton: Switch(
-                value: _themeManager.themeMode == ThemeMode.dark,
-                onChanged: (newValue) {
-                  _themeManager.toggleTheme(newValue);
-                })));
+            floatingActionButton: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                InkWell(
+                  onTap: () {
+                    js.context.callMethod(
+                        'open', ['linkedin.com/in/abdaallah-mahdi-a12b1222a']);
+                  },
+                  child: Image.asset(
+                    'assets/images/linkedin.png',
+                    height: 45,
+                    width: 45,
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    js.context
+                        .callMethod('open', ['abdallahmahdi997@gmail.com']);
+                  },
+                  child: Image.asset(
+                    'assets/images/gmail.png',
+                    height: 45,
+                    width: 45,
+                  ),
+                ),
+                Switch(
+                    value: _themeManager.themeMode == ThemeMode.dark,
+                    onChanged: (newValue) {
+                      _themeManager.toggleTheme(newValue);
+                    }),
+              ],
+            )));
   }
 }

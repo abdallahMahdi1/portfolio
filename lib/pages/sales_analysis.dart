@@ -66,7 +66,7 @@ class SalesAnalysis extends StatelessWidget {
             style: textTheme.bodyMedium,
           ),
           Text(
-            "tools :",
+            "Tools :",
             style: textTheme.bodyLarge,
           ),
           const Divider(),
