@@ -3,9 +3,15 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
+<<<<<<< HEAD
 const RESOURCES = {"assets/AssetManifest.bin": "96cff1394ea77ada9b8d24567efcb157",
 "assets/AssetManifest.bin.json": "51b365f49bed96fcc78e325eeb7ab5e1",
 "assets/AssetManifest.json": "c33286fca30384176a27122f293468ba",
+=======
+const RESOURCES = {"assets/AssetManifest.bin": "3f8a5686c216c55b0932fd0720992efb",
+"assets/AssetManifest.bin.json": "1fee7342054c5cd94c9f7d1671647bb3",
+"assets/AssetManifest.json": "004aac65843c12e751a0ec59f307c72b",
+>>>>>>> 5b3bc2e91ce13627a7da268f995b345b38eb96f0
 "assets/assets/images/arduino.svg": "ed17e1c3a6ed49bc2e46e072a507e9f6",
 "assets/assets/images/best_city.png": "527530831e80492fe98fd066b5500bd1",
 "assets/assets/images/best_month.png": "870c09d77e5c1ed28e607a27ede61c9c",
@@ -59,9 +65,15 @@ const RESOURCES = {"assets/AssetManifest.bin": "96cff1394ea77ada9b8d24567efcb157
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+<<<<<<< HEAD
 "index.html": "5b2bebf7a65fe3385de56f64837d565c",
 "/": "5b2bebf7a65fe3385de56f64837d565c",
 "main.dart.js": "18c6771436aa91d0a6b77a73690ed9ad",
+=======
+"index.html": "6ea2408895b502f68093f78a0fb12b12",
+"/": "6ea2408895b502f68093f78a0fb12b12",
+"main.dart.js": "17d214ad0c59289e5b3278bdd2a9f6c1",
+>>>>>>> 5b3bc2e91ce13627a7da268f995b345b38eb96f0
 "manifest.json": "c93eb1ddad03822037816100e585f135",
 "version.json": "8033db32c85da4e1f3ce2d00e99f10f0"};
 // The application shell files that are downloaded before a service worker can
