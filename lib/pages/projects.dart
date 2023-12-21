@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolios/pages/ithra.dart';
+import 'package:portfolios/pages/road_accident.dart';
 import 'package:portfolios/pages/sales_analysis.dart';
 import 'package:portfolios/pages/call_center.dart';
 
@@ -38,6 +39,11 @@ class Projects extends StatelessWidget {
                       image: 'assets/images/call_center.png',
                       tital: "Call center Dashboard",
                       page: CallCenter(),
+                    ),
+                    Project(
+                      image: 'assets/images/road accident.png',
+                      tital: "Road Accident analysis Dashboard",
+                      page: RoadAccident(),
                     ),
                   ],
                 ),

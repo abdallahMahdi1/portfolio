@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:js' as js;
 
-class CallCenter extends StatelessWidget {
-  const CallCenter({super.key});
+class RoadAccident extends StatelessWidget {
+  const RoadAccident({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,23 +29,12 @@ class CallCenter extends StatelessWidget {
               InkWell(
                 onTap: () {
                   js.context.callMethod('open', [
-                    'https://github.com/abdallahMahdi1/projects/blob/main/power%20bi/call%20center%20dashboard.pbix'
+                    'https://github.com/abdallahMahdi1/projects/blob/main/power%20bi/Road%20Accident.pbix'
                   ]);
                   const Spacer();
                 },
                 child: Text(
                   "Dashboard Link",
-                  style: textTheme.titleSmall,
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  js.context.callMethod('open', [
-                    'https://github.com/abdallahMahdi1/projects/blob/main/power%20bi/Call%20Center_Call%20Center.csv'
-                  ]);
-                },
-                child: Text(
-                  "Dataset",
                   style: textTheme.titleSmall,
                 ),
               ),
@@ -63,7 +52,11 @@ class CallCenter extends StatelessWidget {
           ),
           const Divider(),
           Text(
-            "The primary goal is to construct a dashboard that presents statistical information addressing the below-mentioned problem statement. \n ﻿KPI'S Requirement :\n 1.Total Number of Calls. 2.Total Call Duration in Hours. 3.Total Call Duration in Minutes.  4.Average Call Duration in Minutes. 5.Response Time Percentage. \n Chart's Requirement: \n 1.Total Call by Day. 2.Total Calls by State. 3.Top Reason for Calls. 4.Total Calls by Channel. 5.Total Calls by Sentiment. 6. Total Calls by Call Centre.",
+            "The primary goal is to construct a dashboard that presents statistical information addressing the below-mentioned problem statement. \n ",
+            style: textTheme.bodyMedium,
+          ),
+          Text(
+            "Clients wants to create a Road Accident Dashboard for year 2021 and 2022 so that they can have insight on the below requirements . \n → Primary KPI - Total Casualties and Total Accident values for Current Year and YoY growth \n → Primary KPI's - Total Casualties by Accident Severity for Current Year and YoY growth \n → Secondary KPI's - Total Casualties with respect to vehicle type for Current Year \n → Monthly trend showing comparison of casualties for Current Year and Previous Year \n → Casualties by Road Type for Current year \n → Current Year Casualties by Area/ Location & by Day/Night \n → Total Casualties and Total Accidents by Location ",
             style: textTheme.bodyMedium,
           ),
           Text(
@@ -74,9 +67,7 @@ class CallCenter extends StatelessWidget {
             "To address the preceding inquiry, you must incorporate a new column and perform certain measurements. Integrate a data table and employ functions such as COUNT and SUM to gauge the overall number of calls and response times.\n Following this, construct a dashboard.  ",
             style: textTheme.bodyMedium,
           ),
-          Center(child: Image.asset("assets/images/call_center.png")),
-          const SizedBox(height: 10),
-          Center(child: Image.asset("assets/images/grid.png"))
+          Center(child: Image.asset("assets/images/Road Dashboard.png"))
         ]),
       ),
     ));

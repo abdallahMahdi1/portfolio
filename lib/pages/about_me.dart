@@ -19,10 +19,13 @@ class AboutMe extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Hey, I'm Abdalla.", style: textTheme.displayMedium),
+                  const SizedBox(
+                    height: 5,
+                  ),
                   Text("Data Analysis And Mobile Application Develpor",
                       style: textTheme.displayMedium),
                   Text(
-                      "Ava's ability to transform complex information into actionable insights garnered her a reputation as a highly sought-after data analyst. Now a seasoned professional, Ava is dedicated to helping organizations harness the full potential of their data. ",
+                      "In the vibrant world of data, I'm an avid enthusiast, merging creativity with analytics. Delving into the intricate dance of information, I unravel compelling stories that bring hidden narratives to light.",
                       style: textTheme.bodySmall)
                 ]),
           ),

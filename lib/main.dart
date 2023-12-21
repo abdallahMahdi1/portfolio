@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:loading_indicator/loading_indicator.dart';
-import 'package:portfolios/pages/ithra.dart';
 import 'package:portfolios/pages/projects.dart';
 import 'package:portfolios/pages/skills_and_certificate.dart';
 import 'package:portfolios/themes/theme_cons.dart';
@@ -69,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     // Wait for 2 seconds and then navigate to the next screen
-    Future.delayed(const Duration(seconds: 1), () {
+    Future.delayed(const Duration(seconds: 4), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const HomePage()),
@@ -152,8 +151,8 @@ class _HomePageState extends State<HomePage> {
               children: [
                 InkWell(
                   onTap: () {
-                    js.context.callMethod(
-                        'open', ['linkedin.com/in/abdaallah-mahdi-a12b1222a']);
+                    js.context.callMethod('open',
+                        ['https://linkedin.com/in/abdaallah-mahdi-a12b1222a']);
                   },
                   child: Image.asset(
                     'assets/images/linkedin.png',
@@ -163,8 +162,8 @@ class _HomePageState extends State<HomePage> {
                 ),
                 InkWell(
                   onTap: () {
-                    js.context
-                        .callMethod('open', ['abdallahmahdi997@gmail.com']);
+                    js.context.callMethod(
+                        'open', ['https://abdallahmahdi997@gmail.com']);
                   },
                   child: Image.asset(
                     'assets/images/gmail.png',
